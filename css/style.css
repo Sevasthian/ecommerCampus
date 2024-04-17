@@ -40,7 +40,7 @@ nav{
 }
 .nav_search input{
     outline: none;
-    width: 260px;
+    width: 263px;
     height: 50px;
     border-radius: 5px;
     padding-left: 2.5rem;
@@ -66,4 +66,44 @@ nav{
     left: .8rem;
     user-select: none;
     cursor: pointer;
+}
+.main{
+    /* background: red; */
+    padding: var(--space-layout-padding-lr);
+    margin-top: 15px;
+}
+.main_nav{
+    /* background: violet;
+    padding: 10px; */
+}
+.nav_ul{
+    /* background: darkgray; */
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    overflow-x: scroll; 
+    
+}
+.nav_ul li{
+    list-style: none;
+}
+.nav_ul li a{
+    width: 105px;
+    height: 40px;
+    font-family:  "EncodeSans-Medium";
+    /* background: orange; */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid var(--color-3);
+    color: var(--color-1);
+    background: var(--color-5);
+}
+.nav_ul li a:hover{
+    filter: invert(1);
 }
