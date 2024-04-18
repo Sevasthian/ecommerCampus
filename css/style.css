@@ -72,10 +72,7 @@ nav{
     padding: var(--space-layout-padding-lr);
     margin-top: 15px;
 }
-.main_nav{
-    /* background: violet;
-    padding: 10px; */
-}
+
 .nav_ul{
     /* background: darkgray; */
     height: 55px;
@@ -137,4 +134,83 @@ nav{
     width: 24px;
     height: 24px;
     
+}
+.main_article{
+    height: 70vh;
+    margin-top: 15px;
+    /* background: red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y: scroll;
+
+}
+.main_article section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* background: green; */
+    width: 48%;
+    /* height: 380px; */
+    margin-bottom: 4%;
+}
+.section_front_page{
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border-radius: 14px;
+    width: var(--layout-imagen-width);
+    height: var(--layout-imagen-height);
+    overflow: hidden;
+
+}
+.section_front_page img{
+    position: absolute;
+}
+.section_front_page img:first-child{
+    width: var(--layout-imagen-width);
+    height: var(--layout-imagen-height);
+    object-fit: cover;
+}
+.section_front_page img:last-child{
+    top: 10px;
+    right: 10px;
+}
+.main_article section h5{
+    font-family: "EncodeSans-SemiBold";
+    color: var(--color-2);
+    margin-bottom: 9px;
+}
+.main_article section small{
+    color: var(--color-3);
+}
+.main_article section h5,
+.main_article section small{
+    align-self: flex-start;
+}
+.section_price{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: var(--color-2);
+    margin-top: 10px;
+}
+.section_price span{
+    font-family: "EncodeSans-SemiBold";
+}
+.price_score{
+    display: flex;
+    gap: 5px;
+}
+.main_article section:nth-child(4n+1),
+.main_article section:nth-child(4n+4){
+    /* background: orange; */
+    height: 380px;
+}
+
+.main_article section:nth-child(4n-1){
+    /* background: violet; */
+    margin-top: -54px;
 }
