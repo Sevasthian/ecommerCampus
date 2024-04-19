@@ -4,10 +4,14 @@
     --color-3: #A4AAAD;
     --color-4: #111111;
     --color-5: #FFFF;
+    --color-6: #347EFB;
     --space-layout-padding-lr: 0px 15px;
     --space-layout-padding-t: 5px; 
     --layout-imagen-width:100%;
     --layout-imagen-height:350px;
+
+    --layout-imagen-width-detail:100%;
+    --layout-imagen-height-detail:392px;
 }
 @font-face {
     font-family: "EncodeSans-Regular";
