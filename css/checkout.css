@@ -5,3 +5,96 @@
     font-family: "EncodeSans-Regular";
     box-sizing: border-box;
 }
+.header{
+    /* background-color: red; */
+    /* padding: var(--space-layout-padding-lr); */
+}
+.header_nav{
+    /* background-color: violet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 0 15px;
+}
+.header_nav div:nth-child(2){
+    /* background-color: blue; */
+    font-family: "EncodeSans-SemiBold";
+}
+.main{
+    /* background-color: red; */
+    padding: var(--space-layout-padding-lr);
+
+}
+.details_product{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-3);
+}
+.product_imagen{
+    /* background-color: maroon; */
+    width: var(--layout-imagen-width-checkout);
+    height: var(--layout-imagen-height-checkout);
+}
+.product_imagen img{
+    width: var(--layout-imagen-width-checkout);
+    height: var(--layout-imagen-height-checkout);
+    border-radius: 15px;
+    object-fit: cover;
+}
+.product_description{
+    position: relative;
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 15px; */
+    width: 50%;
+    /* height: 100%; */
+}
+.product_description h3{
+    font-size: 1em;
+    font-family: "EncodeSans-SemiBold";
+}
+.product_description small{
+    margin-top: 2px;
+    color: var(--color-3);
+}
+.product_description span{
+    font-family: "EncodeSans-SemiBold";
+    position: absolute;
+    bottom: 0;
+    font-size: .9em;
+}
+.product_custom{
+    /* background-color: salmon; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product_custom > img{
+    /* padding: 0 5px; */
+    width: 35px;
+    align-self: flex-end;
+    object-fit: scale-down;
+}
+.product_select{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color-4);
+    color: var(--color-5);
+    /* gap: 15px; */
+    width: 90px;
+    height: 28px;
+    border-radius: 5px;
+}
+.product_select img{
+    /* background-color: red; */
+    height: 20px;
+    width: 20px;
+   
+}
