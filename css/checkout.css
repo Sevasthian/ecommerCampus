@@ -25,6 +25,11 @@
     padding: var(--space-layout-padding-lr);
 
 }
+.checkout_details{
+    /* background-color: green; */
+    height: 275px;
+    overflow-y: scroll;
+}
 .details_product{
     /* background-color: green; */
     display: flex;
