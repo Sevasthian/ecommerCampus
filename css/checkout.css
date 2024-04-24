@@ -5,33 +5,36 @@
     font-family: "EncodeSans-Regular";
     box-sizing: border-box;
 }
-.header{
-    /* background-color: red; */
+.header {
+    /* background: red; */
     /* padding: var(--space-layout-padding-lr); */
 }
-.header_nav{
-    /* background-color: violet; */
+.header__nav {
+    /* background: violet; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 15px 0 15px;
 }
-.header_nav div:nth-child(2){
-    /* background-color: blue; */
+.header__nav div:nth-child(2){
     font-family: "EncodeSans-SemiBold";
+    color: var(--color-2);
 }
-.main{
-    /* background-color: red; */
-    padding: var(--space-layout-padding-lr);
 
+
+
+.main {
+    /* background: red; */
+    padding: var(--space-layout-padding-lr);
 }
-.checkout_details{
-    /* background-color: green; */
+.checkout__details {
+    /* background: green; */
     height: 275px;
     overflow-y: scroll;
+    /* padding-top: 15px; */
 }
-.details_product{
-    /* background-color: green; */
+.details__product {
+    /* background: green; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,66 +43,372 @@
     border-bottom-style: solid;
     border-bottom-color: var(--color-3);
 }
-.product_imagen{
-    /* background-color: maroon; */
-    width: var(--layout-imagen-width-checkout);
+.product__imagen {
+    /* background: maroon; */
+    width: var( --layout-imagen-width-checkout);
     height: var(--layout-imagen-height-checkout);
 }
-.product_imagen img{
-    width: var(--layout-imagen-width-checkout);
+.product__imagen img{
+    width: var( --layout-imagen-width-checkout);
     height: var(--layout-imagen-height-checkout);
     border-radius: 15px;
     object-fit: cover;
 }
-.product_description{
+.product__description {
     position: relative;
-    /* background-color: violet; */
+    /* background: violet; */
     display: flex;
     flex-direction: column;
-    /* padding-left: 15px; */
     width: 50%;
-    /* height: 100%; */
 }
-.product_description h3{
+.product__description h3{
     font-size: 1em;
     font-family: "EncodeSans-SemiBold";
+    color: var(--color-2);
 }
-.product_description small{
+.product__description small{
     margin-top: 2px;
     color: var(--color-3);
 }
-.product_description span{
+.product__description span{
     font-family: "EncodeSans-SemiBold";
     position: absolute;
     bottom: 0;
     font-size: .9em;
+    color: var(--color-2);
 }
-.product_custom{
-    /* background-color: salmon; */
+.product__custom {
+    /* background: salmon; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.product_custom > img{
-    /* padding: 0 5px; */
+.product__custom > img{
+    /* padding: 5px 5px; */
     width: 35px;
     align-self: flex-end;
     object-fit: scale-down;
+    /* background: orange; */
 }
-.product_select{
+.product__select{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: var(--color-4);
+    background: var(--color-4);
     color: var(--color-5);
-    /* gap: 15px; */
     width: 90px;
     height: 28px;
     border-radius: 5px;
 }
-.product_select img{
-    /* background-color: red; */
+.product__select img{
     height: 20px;
     width: 20px;
-   
 }
+.product__select span{
+    font-family: "EncodeSans-SemiBold";
+}
+
+.section__Shopping{
+    /* background: red; */
+    margin-top: 20px;
+}
+.Shopping__title{
+    /* background: blue; */
+    margin-bottom: 15px;
+}
+.Shopping__title h3{
+    color: var(--color-1);
+    font-family: "EncodeSans-SemiBold";
+}
+
+.section__card{
+    /* background: red; */
+    margin-bottom: 15px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.dropdown__button {
+    background-color: var(--color-3);
+    border-radius: 5px;
+    width: 100%;
+    color: var(--color-1);
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shopping__card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.shopping__card label{
+    font-family: "EncodeSans-SemiBold";
+}
+/* .shopping__card img{
+    transform: rotate(272deg);
+} */
+.dropdown__content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.dropdown__content div:last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.dropdown__content div {
+    color: var(--color-1);
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown__content div:hover {
+    background-color: var(--color-1);
+    color: var(--color-5);
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown__content {
+    display: block;
+    width: 100%
+}
+
+.dropdown:hover .dropdown__button {
+    background-color: var(--color-1);
+    color: var(--color-5);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.dropdown:hover .dropdown__button .shopping__option{
+    filter: invert(1);
+}
+.section__bill {
+    /* background: red; */
+    margin-top: 25px;
+}
+.section__bill span{
+    font-family: "EncodeSans-SemiBold";
+}
+.bill__total {
+    /* background: blue; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.bill__fee {
+    /* background: violet; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-3);
+}
+.bill__subtotal {
+    /* background: green; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.bill__total label,
+.bill__fee label,
+.bill__subtotal label{
+    color: var(--color-2);
+}
+.bill__total span,
+.bill__fee span,
+.bill__subtotal span{
+    color: var(--color-2);
+    font-family: "EncodeSans-SemiBold";
+}
+.footer{
+    /* background: red; */
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    padding: var(--space-layout-padding-lr);
+}
+.footer__ul{
+    background: var(--color-4);
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 40px;
+}
+.footer__ul li{
+    list-style: none;
+    display: flex;
+}
+.footer__ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background: red; */
+    text-decoration: none;
+    gap: 5px;
+    color: var(--color-5);
+}
+.footer__ul li a span{
+    font-family:"EncodeSans-Medium";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="header_nav">
+                <div>
+                    <a href="../views/detail.html">
+                        <img src="../storage/img/back.svg" alt="">
+                    </a>
+                </div>
+                <div>Checkout</div>
+                <div>
+                    <img src="../storage/img/sidebar.svg" alt="">
+                </div>
+            </nav>
+        </li>
+    </header>
+    <main class="main">
+        <section class="checkout_details">
+            <article class="details_product">
+                <div class="product_imagen">
+                    <img src="../storage/img/img3.png">
+                </div>
+                <div class="product_description">
+                    <h3>Modern light clothes</h3>
+                    <small>Dress modern</small>
+                    <span>$212.99</span>
+                </div>
+                <div class="product_custom">
+                        <img src="../storage/img/option.svg">
+                    <div class="product_select">
+                        <img src="../storage/img/minusCheckout.svg">
+                        <span>4</span>
+                        <img src="../storage/img/plusCheckout.svg">
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="checkout_details">
+            <article class="details_product">
+                <div class="product_imagen">
+                    <img src="../storage/img/img1.png">
+                </div>
+                <div class="product_description">
+                    <h3>Modern light clothes</h3>
+                    <small>Dress modern</small>
+                    <span>$212.99</span>
+                </div>
+                <div class="product_custom">
+                        <img src="../storage/img/option.svg">
+                    <div class="product_select">
+                        <img src="../storage/img/minusCheckout.svg">
+                        <span>1</span>
+                        <img src="../storage/img/plusCheckout.svg">
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="checkout_details">
+            <article class="details_product">
+                <div class="product_imagen">
+                    <img src="../storage/img/img2.png">
+                </div>
+                <div class="product_description">
+                    <h3>Modern light clothes</h3>
+                    <small>Dress modern</small>
+                    <span>$212.99</span>
+                </div>
+                <div class="product_custom">
+                        <img src="../storage/img/option.svg">
+                    <div class="product_select">
+                        <img src="../storage/img/minusCheckout.svg">
+                        <span>4</span>
+                        <img src="../storage/img/plusCheckout.svg">
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="checkout_details">
+            <article class="details_product">
+                <div class="product_imagen">
+                    <img src="../storage/img/img3.png">
+                </div>
+                <div class="product_description">
+                    <h3>Modern light clothes</h3>
+                    <small>Dress modern</small>
+                    <span>$212.99</span>
+                </div>
+                <div class="product_custom">
+                        <img src="../storage/img/option.svg">
+                    <div class="product_select">
+                        <img src="../storage/img/minusCheckout.svg">
+                        <span>4</span>
+                        <img src="../storage/img/plusCheckout.svg">
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="checkout_details">
+            <article class="details_product">
+                <div class="product_imagen">
+                    <img src="../storage/img/img1.png">
+                </div>
+                <div class="product_description">
+                    <h3>Modern light clothes</h3>
+                    <small>Dress modern</small>
+                    <span>$212.99</span>
+                </div>
+                <div class="product_custom">
+                        <img src="../storage/img/option.svg">
+                    <div class="product_select">
+                        <img src="../storage/img/minusCheckout.svg">
+                        <span>1</span>
+                        <img src="../storage/img/plusCheckout.svg">
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="checkout_details">
+            <article class="details_product">
+                <div class="product_imagen">
+                    <img src="../storage/img/img2.png">
+                </div>
+                <div class="product_description">
+                    <h3>Modern light clothes</h3>
+                    <small>Dress modern</small>
+                    <span>$212.99</span>
+                </div>
+                <div class="product_custom">
+                        <img src="../storage/img/option.svg">
+                    <div class="product_select">
+                        <img src="../storage/img/minusCheckout.svg">
+                        <span>4</span>
+                        <img src="../storage/img/plusCheckout.svg">
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

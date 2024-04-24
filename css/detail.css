@@ -5,107 +5,106 @@
     font-family: "EncodeSans-Regular";
     box-sizing: border-box;
 }
-.main{
+.main {
     /* background: red; */
     padding: var(--space-layout-padding-lr);
-    margin-top: var(--space-layout-padding-t);
+    margin-top: var( --space-layout-padding-t);
 }
-.main_section{
+.main__section {
     width: 100%;
-    
     /* background: green; */
 }
-.article_product{
+.article__product {
     display: flex;
     flex-direction: row;
     justify-content: center;
     position: relative;
 }
-.product_image{
-    /* background-color: blue; */
+.product__image {
+    /* background: blue; */
     width: var(--layout-imagen-width-detail);
     height: var(--layout-imagen-height-detail);
     border-radius: 20px;
     overflow: hidden;
 }
-.product_image img{
+.product__image img{
     width: var(--layout-imagen-width-detail);
     height: var(--layout-imagen-height-detail);
     object-fit: cover;
 }
-.product_menu{
-    /* background-color: violet; */
-    width: 100%;    
+.product__menu {
+    /* background: violet; */
+    width: 100%;
     position: absolute;
     display: flex;
     justify-content: space-between;
-    padding: 5px 15px 0 15px;
+    padding: 15px 15px 0 15px;
 }
-.article_detail{
-    /* background-color: red; */
-
+.article__detail {
+    /* background: red; */
 }
-.detail_head{
+.detail__head {
     margin-top: 20px;
-    /* background-color: green; */
-    display: flex;
+    /* background: green; */
+    display: flex;  
     justify-content: space-between;
     align-items: center;
 }
-.detail_head h1{
-    width: 154px;
+.detail__head h1{
     font-family: "EncodeSans-SemiBold";
-    font-size: 24px;
+    color: var(--color-2);
 }
-.detail_select{
-    display: flex;
+.product__select {
+    display: flex;  
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     gap: 10px;
 }
-.detail_select span{
+.product__select span{
     font-family: "EncodeSans-Bold";
+    color: var(--color-2);
 }
-.detail_score{
+.detail__score {
     display: flex;
     gap: 5px;
     align-items: center;
 }
-.detail_score span{
-    color:  var(--color-3);
-}
-.detail_score a{
-    text-decoration: none;
-    color: var(--color-6);
-}
-.product_information{
-    /* background-color: red; */
-    width: 75%;
-    margin-top: 10px;
+.detail__score span{
     color: var(--color-3);
 }
-.product_information strong{
+.detail__score a{
+    text-decoration: none;
+}
+.product__information{
+    /* background: red; */
+    width: 75%;
+    margin-top: 15px;
+    color: var(--color-3);
+}
+.product__information strong{
     color: var(--color-2);
 }
-.product_information + hr{
-    margin-top:  5px;
+.product__information + hr{
+    margin-top: 10px;
     box-shadow: 0px 1px 2px var(--color-3);
     height: 1px;
     border-style: none;
 }
-.product_custom{
+.product__custom{
     margin-top: 15px;
+    /* background: red; */
     display: flex;
     justify-content: space-between;
 }
-.prdduct_size,
-.product_color{
+.product__size,
+.product__color{
     margin-top: 5px;
     font-family: "EncodeSans-Bold";
 }
-.product_size h5,
-.product_color h5{
+.product__size h5,
+.product__color h5{
     padding-bottom: 10px;
+    color: var(--color-2);
 }
 
 .footer{
@@ -115,7 +114,7 @@
     width: 100%;
     padding: var(--space-layout-padding-lr);
 }
-.footer_ul{
+.footer__ul{
     background: var(--color-4);
     height: 55px;
     display: flex;
@@ -123,23 +122,28 @@
     justify-content: space-evenly;
     align-items: center;
     border-radius: 40px;
-    box-shadow: 0px 0px 55px 10px var(--color-5);
 }
-.footer_ul li {
+.footer__ul li{
     list-style: none;
-    background: var(--color-1);
-    border-radius: 100%;
     display: flex;
 }
-.footer_ul li a {
+.footer__ul li a{
     display: flex;
-    align-items:  center;
+    align-items: center;
     justify-content: center;
     width: 100%;
+    /* background: red; */
     text-decoration: none;
     gap: 5px;
     color: var(--color-5);
 }
-.footer_ul li a img{
+.footer__ul li a img{
     width: 25px;
+}
+.footer__ul li a span{
+    font-family:"EncodeSans-Medium";
+}
+.footer__ul li a del{
+    color:var(--color-3);
+    font-family:"EncodeSans-Regular";
 }
