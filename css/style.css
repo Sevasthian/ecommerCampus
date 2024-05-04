@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    background: linear-gradient(250deg, rgb(48, 48, 134) , rgba(44, 49, 110, 0.932), rgb(116, 115, 115) );
+    /* background: linear-gradient(250deg, rgb(48, 48, 134) , rgba(44, 49, 110, 0.932), rgb(116, 115, 115) ); */
 }
 .header_information span{
     font-family: "EncodeSans-Bold";
