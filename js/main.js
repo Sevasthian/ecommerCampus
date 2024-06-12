@@ -8,11 +8,11 @@ import { getAllProductName,getAllCategory } from "./module/app.js";
 
 let input_search = document.querySelector("#input_search");
 let main_article = document.querySelector(".main_article");
-let nav_ul = document(".nav_ul");
+let nav_ul = document.querySelector(".nav_ul");
 
-addEventListener("DOMContentLoaded", (e)=>{
-    let data = await getAllCategory
-
+addEventListener("DOMContentLoaded", async(e)=>{
+    let data = await getAllCategory();
+    nav_ul.innerHTML = await menuListCatergoryIndex(data);
 })
 
 input_search.addEventListener("change", async e =>{

@@ -1,8 +1,8 @@
 export const galleryIndex = (res)=>{
     let {products} = res.data
     let plantilla = "";
-    products.forEach(vale, index) => {
-        plantilla += return /*html*/`
+    products.forEach((vale, index) => {
+        plantilla += /*html*/`
         <section>
             <div class="section_front_page">
                 <a href="views/detail.html">
@@ -21,5 +21,6 @@ export const galleryIndex = (res)=>{
             </div>
         </section>
         `;
-    }
+    });
+    return plantilla
 };
