@@ -88,7 +88,7 @@ nav{
     list-style: none;
 }
 .nav_ul li a{
-    width: 105px;
+    width: 125px;
     height: 40px;
     font-family:  "EncodeSans-Medium";
     /* background: orange; */
@@ -103,6 +103,11 @@ nav{
     background: var(--color-5);
     transition-duration: 0.4s;
     transition-timing-function: linear;
+}
+.nav_ul li a span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .nav_ul li a:hover{
     filter: invert(1);

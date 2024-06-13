@@ -1,4 +1,4 @@
-export const menuListCatergoryIndex = ()=>{
+export const menuListCatergoryIndex = (res)=>{
     let {data} = res;
     let plantilla = "";
     data.forEach((value,index) => {
@@ -11,5 +11,5 @@ export const menuListCatergoryIndex = ()=>{
         </li>
         `
     });
-    return plantilla
+    return plantilla;
 }
