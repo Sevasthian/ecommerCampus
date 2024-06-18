@@ -89,7 +89,7 @@ nav{
 }
 .nav_ul li a{
     width: 125px;
-    height: 40px;
+    height: 35px;
     font-family:  "EncodeSans-Medium";
     /* background: orange; */
     text-decoration: none;
@@ -184,7 +184,7 @@ nav{
 .section_front_page a img:first-child{
     width: var(--layout-imagen-width);
     height: var(--layout-imagen-height);
-    object-fit: cover;
+    object-fit: scale-down;
 }
 .section_front_page > img:last-child{
     top: 10px;

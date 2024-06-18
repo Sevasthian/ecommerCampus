@@ -1,18 +1,9 @@
-
-
-addEventListener("DOMContentLoaded", async e => {
-    let params = new URLSearchParams(location.search);
-    console.log(params.get("id"));
-})
-
 import { galleryCategory } from "./components/gallery.js";
-import { getProductId } from "./module/detail.js";
 import { titleProductDetail } from "./components/section.js";
+import { getProductId } from "./module/detail.js";
 
 let main__section_gallery = document.querySelector("#main__section_gallery");
 let main__section_title = document.querySelector("#main__section_title");
-
-
 
 addEventListener("DOMContentLoaded", async(e)=>{
     let params = new URLSearchParams(location.search);
