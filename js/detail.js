@@ -41,12 +41,12 @@ btn_plus.addEventListener("click",quantity)
 })
 
 const quantity = async (e)=>{
-let span_quantity = document.querySelector("#span_quantity");
-let price_discount = document.querySelector("#price_discount");
-let price_original = document.querySelector("#price_original");
-let params = new URLSearchParams(location.search);
-let id = params.get('id');
-let res = JSON.parse(localStorage.getItem(id)).data;
+    let span_quantity = document.querySelector("#span_quantity");
+    let price_discount = document.querySelector("#price_discount");
+    let price_original = document.querySelector("#price_original");
+    let params = new URLSearchParams(location.search);
+    let id = params.get('id');
+    let res = JSON.parse(localStorage.getItem(id)).data;
 
 let product_original_price = undefined;
 if(res.product_original_price) product_original_price = Number(res.product_original_price.replace("$", ""));
