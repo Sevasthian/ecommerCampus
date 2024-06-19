@@ -1,5 +1,6 @@
 export const menuListCatergoryIndex = (res)=>{
     let {data} = res;
+    console.log(res)
     let plantilla = "";
     data.forEach((value,index) => {
         plantilla += /*html*/`
