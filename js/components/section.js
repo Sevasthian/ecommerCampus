@@ -41,3 +41,46 @@ export const productDetail = async(res)=>{
         <p>${string2}</p>
     </details>`;
 }
+export const sumPrice = async array => {
+    let posi = 0;
+    for(let i = 0; i < array.length; i++){
+    posi += array[i]
+    };
+    var sumaPrice =posi.toFixed(2)
+    return sumaPrice
+}
+
+export const checkoutPrice = async (res, totalprice)=>{
+    let plantilla = "";
+    console.log(res);
+    const check = []
+    res.forEach((item) => {
+        if (item.checkout) {
+            check.push(item.checkout) ;
+            let items = 0;
+            for (let i = 0; i < check.length; i++) {
+                items ++;
+            }
+            console.log(items);
+            return plantilla = /*html*/`
+            <article id="total__items" class="section__bill">
+                    <div class="bill__total">
+                        <label>Total (${items})</label>
+                        <span>$${totalprice}</span>
+                    </div>
+                    <div id="shipping" class="bill__fee">
+                        <label>Shipping Fee</label>
+                        <span>$.0.00</span>
+                    </div>
+                    <div id="sub__total" class="bill__subtotal">
+                        <label>Sub Total</label>
+                        <span>$131.97</span>
+                    </div>
+                </article>
+            `
+        }
+
+    });
+    console.log(plantilla);
+    return plantilla;
+}
